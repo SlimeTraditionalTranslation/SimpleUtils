@@ -1,6 +1,6 @@
 name: SimpleUtils
 author: Mooy1
-description: Simple utilities items for slimefun
+description: 黏液科技附加 簡單實用工具 繁體翻譯版.
 website: https://github.com/Mooy1/SimpleUtils
 main: io.github.mooy1.simpleutils.SimpleUtils
 depend: [Slimefun]

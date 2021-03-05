@@ -30,8 +30,8 @@ public final class SimpleWrench extends SimpleSlimefunItem<ItemUseHandler> imple
     public static final SlimefunItemStack ITEM =new SlimefunItemStack(
             "SIMPLE_WRENCH",
             Material.DIAMOND_HOE,
-            "&6Simple Wrench",
-            "&eRight-Click to quickly dismantle cargo, capacitors, and machines"
+            "&6簡易扳手",
+            "&e右鍵點擊快速拆卸 物流, 電容, 和機器"
     );
     
     private final Map<UUID, Long> coolDowns = new HashMap<>();

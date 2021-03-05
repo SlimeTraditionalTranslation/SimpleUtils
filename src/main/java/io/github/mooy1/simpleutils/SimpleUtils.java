@@ -20,7 +20,7 @@ public final class SimpleUtils extends JavaPlugin implements SlimefunAddon {
         
         PluginUtils.setup(ChatColor.GOLD + "SimpleUtils", this, "Mooy1/SimpleUtils/master", getFile());
         
-        PluginUtils.setupMetrics(10285);
+        //PluginUtils.setupMetrics(10285);
         
         Setup.setup(this);
     }
@@ -32,7 +32,7 @@ public final class SimpleUtils extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public String getBugTrackerURL() {
-        return "https://github.com/Mooy1/SimpleUtils/issues";
+        return "https://github.com/xMikux/SimpleUtils/issues";
     }
 
     @Nonnull

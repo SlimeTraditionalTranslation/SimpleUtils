@@ -34,8 +34,8 @@ public final class MiningHammer extends SimpleSlimefunItem<ToolUseHandler> imple
         super(Items.CATEGORY, new SlimefunItemStack(
                 ChatUtils.removeColorCodes(name).toUpperCase(Locale.ROOT) + "_MINING_HAMMER",
                 material,
-                name + " Mining Hammer",
-                "&7Mines in a " + size + "x" + size + " area"
+                name + "礦錘",
+                "&7一次挖 " + size + "x" + size + " 範圍"
         ), RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
                 metal, metal, metal,
                 metal, Items.HAMMER_ROD, metal,
