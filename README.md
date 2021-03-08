@@ -15,7 +15,7 @@
 - 扳手 - 快速破壞物流節點, 電容, 和電力機器
 
 ## 下載
-非官方繁體中文版: https://xmikux.github.io/builds/xMikux/SimpleUtils/master/
+非官方繁體中文版: https://xmikux.github.io/builds/xMikux/SimpleUtils/master/ <br>
 官方構鍵: https://thebusybiscuit.github.io/builds/Mooy1/SimpleUtils/master/
 
 [![Build Status](https://xmikux.github.io/builds/xMikux/SimpleUtils/master/badge.svg)](https://xmikux.github.io/builds/xMikux/GridExpansion/master)

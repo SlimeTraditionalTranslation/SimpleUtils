@@ -30,8 +30,7 @@ public final class SimpleSieve extends MultiBlockMachine {
             "SIMPLE_SIEVE",
             Material.COMPOSTER,
             "&6簡易篩網",
-            "&7篩 礫石, 沙子 和粉碎的礦物",
-            "&7變成礦石塊和礦物"
+            "&7將礫石篩成礦石塊和材料"
     );
     public static final RecipeType TYPE = new RecipeType(PluginUtils.getKey("simple_sieve"), ITEM);
     
@@ -59,7 +58,7 @@ public final class SimpleSieve extends MultiBlockMachine {
         addRecipe(new ItemStack(Material.FLINT), 5);
         addRecipe(Items.COBALT_DUST, 1);
         addRecipe(Items.NICKEL_DUST, 2);
-        addRecipe(new ItemStack(Material.IRON_INGOT), 2);
+        addRecipe(new ItemStack(Material.IRON_NUGGET), 2);
     }
     
     private void addRecipe(ItemStack item, int chance) {

@@ -28,8 +28,8 @@ public final class Setup {
         new MiningHammer(Material.IRON_PICKAXE, new ItemStack(Material.IRON_INGOT), "&f鐵", 2, 0, 3).register(plugin);
         new MiningHammer(Material.IRON_PICKAXE, SlimefunItems.COPPER_INGOT, "&6銅", 3, 3, 0).register(plugin);
         new MiningHammer(Material.DIAMOND_PICKAXE, new ItemStack(Material.DIAMOND), "&b鑽石", 3, 3, 3).register(plugin);
-        new MiningHammer(Material.IRON_PICKAXE, SlimefunItems.REINFORCED_ALLOY_INGOT, "&7強化合金", 4, 5, 5).register(plugin);
-        new MiningHammer(Material.NETHERITE_PICKAXE, SlimefunItems.CARBON_CHUNK, "&8碳", 5, 6, 6).register(plugin);
+        new MiningHammer(Material.IRON_PICKAXE, SlimefunItems.REINFORCED_ALLOY_INGOT, "&7強化合金", 4, 4, 5).register(plugin);
+        new MiningHammer(Material.NETHERITE_PICKAXE, SlimefunItems.CARBON_CHUNK, "&8碳", 5, 5, 7).register(plugin);
         
         // dusts
         new SlimefunItem(Items.CATEGORY, Items.COBALT_DUST, SimpleSieve.TYPE, fill(new ItemStack(Material.GRAVEL))).register(plugin);
