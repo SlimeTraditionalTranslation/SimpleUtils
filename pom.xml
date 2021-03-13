@@ -57,7 +57,7 @@
         <dependency>
             <groupId>io.github.xMikux</groupId>
             <artifactId>InfinityLib</artifactId>
-            <version>d6f6fbf</version>
+            <version>f7557a4</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
