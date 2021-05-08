@@ -38,7 +38,7 @@ public final class MiningHammer extends SimpleSlimefunItem<ToolUseHandler> imple
                 ChatUtils.removeColorCodes(name).toUpperCase(Locale.ROOT) + "_MINING_HAMMER",
                 material,
                 name + "礦錘",
-                "&4不建議使用,將在幾週內將其移除，請改用爆炸鎬選擇。"
+                "&4不建議使用,將在幾週內將其移除，請改用爆炸鎬。"
         ), RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
                 null, null, null,
                 null, new ItemStack(Material.BARRIER), null,
