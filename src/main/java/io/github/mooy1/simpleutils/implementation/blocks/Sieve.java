@@ -1,14 +1,9 @@
-package io.github.mooy1.simpleutils.blocks;
+package io.github.mooy1.simpleutils.implementation.blocks;
 
-import io.github.mooy1.infinitylib.items.LoreUtils;
-import io.github.mooy1.infinitylib.items.StackUtils;
-import io.github.mooy1.simpleutils.SimpleUtils;
-import io.github.thebusybiscuit.slimefun4.core.multiblocks.MultiBlockMachine;
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
-import me.mrCookieSlime.Slimefun.Objects.Category;
-import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
-import me.mrCookieSlime.Slimefun.cscorelib2.collections.RandomizedSet;
-import me.mrCookieSlime.Slimefun.cscorelib2.inventory.ItemUtils;
+import java.util.ArrayList;
+import java.util.List;
+import javax.annotation.Nonnull;
+
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
@@ -19,15 +14,20 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
-import javax.annotation.Nonnull;
-import java.util.ArrayList;
-import java.util.List;
+import io.github.mooy1.infinitylib.items.StackUtils;
+import io.github.mooy1.simpleutils.SimpleUtils;
+import io.github.thebusybiscuit.slimefun4.core.multiblocks.MultiBlockMachine;
+import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
+import me.mrCookieSlime.Slimefun.Objects.Category;
+import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
+import me.mrCookieSlime.Slimefun.cscorelib2.collections.RandomizedSet;
+import me.mrCookieSlime.Slimefun.cscorelib2.inventory.ItemUtils;
 
 public final class Sieve extends MultiBlockMachine {
 
     private final RandomizedSet<ItemStack> recipes = new RandomizedSet<>();
     private final List<ItemStack> display = new ArrayList<>();
-    
+
     public Sieve(Category category, SlimefunItemStack item, ItemStack[] recipe, BlockFace face) {
         super(category, item, recipe, face);
 
@@ -45,12 +45,12 @@ public final class Sieve extends MultiBlockMachine {
         addRecipe(new ItemStack(Material.FLINT), 5);
         addRecipe(new ItemStack(Material.IRON_NUGGET), 3);
     }
-    
+
     private void addRecipe(ItemStack item, int chance) {
         this.recipes.add(item, chance);
         this.displayRecipes.add(new ItemStack(Material.GRAVEL));
         ItemStack clone = item.clone();
-        LoreUtils.addLore(clone, "", "&6機率: " + chance);
+        StackUtils.addLore(clone, "", "&6Chance: " + chance);
         this.displayRecipes.add(clone);
     }
 
@@ -63,39 +63,35 @@ public final class Sieve extends MultiBlockMachine {
     @Override
     public void onInteract(Player p, Block b) {
         ItemStack input = p.getInventory().getItemInMainHand();
-        
+
         if (StackUtils.getID(input) != null || input.getType() != Material.GRAVEL) {
-            p.sendMessage(ChatColor.RED + "未知配方!");
+            p.sendMessage(ChatColor.RED + "Invalid Recipe!");
             return;
         }
-        
+
         ItemStack item = this.recipes.getRandom();
-        
+
         if (p.getGameMode() != GameMode.CREATIVE) {
-            ItemUtils.consumeItem(input, 1,false);
+            ItemUtils.consumeItem(input, 1, false);
         }
-        
+
         if (item.getType() == Material.AIR) {
             return;
         }
 
         p.playSound(b.getLocation(), Sound.BLOCK_SAND_BREAK, 1, 1);
-        
-        ItemStack output = item.clone();
-        
-        Inventory outputChest = findOutputChest(b.getRelative(BlockFace.DOWN), output);
 
-        if (outputChest != null) {
-            SimpleUtils.inst().runSync(() -> {
+        ItemStack output = item.clone();
+
+        SimpleUtils.inst().runSync(() -> {
+            Inventory outputChest = findOutputChest(b.getRelative(BlockFace.DOWN), output);
+            if (outputChest != null) {
                 outputChest.addItem(output);
-                p.playSound(b.getLocation(), Sound.ENTITY_ARROW_HIT_PLAYER, 1, 1);
-            }, 40);
-        } else {
-            SimpleUtils.inst().runSync(() -> {
+            } else {
                 b.getWorld().dropItemNaturally(b.getLocation().add(0, .5, 0), output);
-                p.playSound(b.getLocation(), Sound.ENTITY_ARROW_HIT_PLAYER, 1, 1);
-            }, 40);
-        }
+            }
+            p.playSound(b.getLocation(), Sound.ENTITY_ARROW_HIT_PLAYER, 1, 1);
+        }, 40);
     }
 
 }
