@@ -8,9 +8,7 @@
 
 - 增強工作台 - 製作原版與黏液科技配方在單個選單
 
-
-- 礦槌錘 - 一次開採 3x3 或 5x5 範圍.
-
+- 簡單電梯 - 蹲下來下去, 跳躍來上去
 
 - 扳手 - 快速破壞物流節點, 電容, 和電力機器
 
@@ -23,9 +21,10 @@
 ## 需求
 Minecraft 版本: 1.16+ (建議使用 Paper)
 
-https://papermc.io/downloads
-
-Slimefun 版本: DEV 825+
+Slimefun 版本: DEV 900+
 
 [![Build Status](https://thebusybiscuit.github.io/builds/TheBusyBiscuit/Slimefun4/master/badge.svg)](https://thebusybiscuit.github.io/builds/TheBusyBiscuit/Slimefun4/master/)
 
+## 更新日誌
+
+Dev 8 - Fixed sieve, requires slimefun Dev 900+ now
