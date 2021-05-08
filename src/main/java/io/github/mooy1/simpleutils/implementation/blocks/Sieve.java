@@ -50,7 +50,7 @@ public final class Sieve extends MultiBlockMachine {
         this.recipes.add(item, chance);
         this.displayRecipes.add(new ItemStack(Material.GRAVEL));
         ItemStack clone = item.clone();
-        StackUtils.addLore(clone, "", "&6Chance: " + chance);
+        StackUtils.addLore(clone, "", "&6機率: " + chance);
         this.displayRecipes.add(clone);
     }
 
@@ -65,7 +65,7 @@ public final class Sieve extends MultiBlockMachine {
         ItemStack input = p.getInventory().getItemInMainHand();
 
         if (StackUtils.getID(input) != null || input.getType() != Material.GRAVEL) {
-            p.sendMessage(ChatColor.RED + "Invalid Recipe!");
+            p.sendMessage(ChatColor.RED + "未知配方!");
             return;
         }
 

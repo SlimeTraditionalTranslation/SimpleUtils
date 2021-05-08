@@ -37,8 +37,8 @@ public final class MiningHammer extends SimpleSlimefunItem<ToolUseHandler> imple
         super(category, new SlimefunItemStack(
                 ChatUtils.removeColorCodes(name).toUpperCase(Locale.ROOT) + "_MINING_HAMMER",
                 material,
-                name + " Mining Hammer",
-                "&4Deprecated for removal in a few weeks, use the Explosive Pick instead."
+                name + " 礦錘",
+                "&4不建議使用,將在幾週內將其移除，請改用爆炸性選擇。"
         ), RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
                 null, null, null,
                 null, new ItemStack(Material.BARRIER), null,

@@ -27,32 +27,32 @@ public final class Items {
     public static final SlimefunItemStack WRENCH = new SlimefunItemStack(
             "SIMPLE_WRENCH",
             Material.IRON_HOE,
-            "&6Simple Wrench",
-            "&eRight-Click to quickly dismantle cargo, capacitors, and machines"
+            "&6簡易扳手",
+            "&e右鍵點擊快速拆除 物流, 電容, 和機器"
     );
     public static final SlimefunItemStack HAMMER_ROD = new SlimefunItemStack(
             "HAMMER_ROD",
             Material.BLAZE_ROD,
-            "&6Hammer Rod",
-            "&7Core component of mining hammers"
+            "&6錘桿",
+            "&7礦錘的核心組件"
     );
     public static final SlimefunItemStack SIEVE = new SlimefunItemStack(
             "SIMPLE_SIEVE",
             Material.COMPOSTER,
-            "&6Simple Sieve",
-            "&7Sifts gravel into dusts and materials"
+            "&6簡易篩網",
+            "&7將礫石篩成粉和材料"
     );
     public static final SlimefunItemStack ELEVATOR = new SlimefunItemStack(
             "SIMPLE_ELEVATOR",
             Material.QUARTZ_BLOCK,
-            "&fSimple Elevator",
-            "&7Crouch to go down, Jump to go up"
+            "&f簡單電梯",
+            "&7蹲下來下去, 跳躍來上去"
     );
     public static final SlimefunItemStack WORKBENCH = new SlimefunItemStack(
             "SIMPLE_WORKBENCH",
             Material.CRAFTING_TABLE,
-            "&6Simple Workbench",
-            "&7Can craft both vanilla and slimefun recipes"
+            "&6簡單工作台",
+            "&7可以製作原版和黏液科技的配方"
     );
 
     public static void setup(@Nonnull SimpleUtils plugin) {
@@ -86,10 +86,10 @@ public final class Items {
                 null, SlimefunItems.SILVER_INGOT, null,
                 null, SlimefunItems.ALUMINUM_INGOT, null
         }).register(plugin);
-        new MiningHammer(category, Material.IRON_PICKAXE, "&6Copper", 3, 1).register(plugin);
-        new MiningHammer(category, Material.DIAMOND_PICKAXE,  "&bDiamond", 3, 2).register(plugin);
-        new MiningHammer(category, Material.IRON_PICKAXE,  "&7Reinforced", 3, 3).register(plugin);
-        new MiningHammer(category, Material.NETHERITE_PICKAXE,  "&8Carbonado", 5, 4).register(plugin);
+        new MiningHammer(category, Material.IRON_PICKAXE, "&6銅", 3, 1).register(plugin);
+        new MiningHammer(category, Material.DIAMOND_PICKAXE,  "&b鑽石", 3, 2).register(plugin);
+        new MiningHammer(category, Material.IRON_PICKAXE,  "&7強化合金", 3, 3).register(plugin);
+        new MiningHammer(category, Material.NETHERITE_PICKAXE,  "&8黑鑽石", 5, 4).register(plugin);
     }
 
 }
