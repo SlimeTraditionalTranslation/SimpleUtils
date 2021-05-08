@@ -56,7 +56,7 @@ public final class Items {
     );
 
     public static void setup(@Nonnull SimpleUtils plugin) {
-        Category category = new Category(SimpleUtils.inst().getKey("main"), new CustomItem(Material.COMPOSTER, "&6Simple Utils"), 0);
+        Category category = new Category(SimpleUtils.inst().getKey("main"), new CustomItem(Material.COMPOSTER, "&6簡單實用工具"), 0);
         
         // misc
         new SlimefunItem(category, HAMMER_ROD, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
