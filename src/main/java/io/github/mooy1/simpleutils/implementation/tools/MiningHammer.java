@@ -28,6 +28,7 @@ import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 import me.mrCookieSlime.Slimefun.cscorelib2.protection.ProtectableAction;
 
+@Deprecated
 public final class MiningHammer extends SimpleSlimefunItem<ToolUseHandler> implements NotPlaceable {
 
     private final int radius;
@@ -44,11 +45,14 @@ public final class MiningHammer extends SimpleSlimefunItem<ToolUseHandler> imple
                 null, new ItemStack(Material.BARRIER), null,
                 null, null, null
         });
+
         getItem().addUnsafeEnchantment(Enchantment.DIG_SPEED, eff);
 
         // # of extra blocks that will be mined
         this.blocks = size * size - 1;
         this.radius = (size - 1) >> 1;
+
+        setHidden(true);
     }
 
     @Nonnull
@@ -56,6 +60,10 @@ public final class MiningHammer extends SimpleSlimefunItem<ToolUseHandler> imple
     public ToolUseHandler getItemHandler() {
         return (e, item, fortune, drops) -> {
             Player p = e.getPlayer();
+
+            if (ThreadLocalRandom.current().nextInt(10) == 0) {
+                p.sendMessage("&4此物品已被棄用. 將會在不久後移除. 請改用爆炸鎬.");
+            }
 
             if (p.isSneaking() || !SlimefunPlugin.getProtectionManager().hasPermission(p, e.getBlock(), ProtectableAction.BREAK_BLOCK)) {
                 return;
