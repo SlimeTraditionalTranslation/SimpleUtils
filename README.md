@@ -13,10 +13,10 @@
 - 扳手 - 快速破壞物流節點, 電容, 和電力機器
 
 ## 下載
-非官方繁體中文版: https://xmikux.github.io/builds/xMikux/SimpleUtils/master/ <br>
+非官方繁體中文版: https://xmikux.github.io/builds/SlimeTraditionalTranslation/SimpleUtils/master/ <br>
 官方構鍵: https://thebusybiscuit.github.io/builds/Mooy1/SimpleUtils/master/
 
-[![Build Status](https://xmikux.github.io/builds/xMikux/SimpleUtils/master/badge.svg)](https://xmikux.github.io/builds/xMikux/GridExpansion/master)
+[![Build Status](https://xmikux.github.io/builds/SlimeTraditionalTranslation/SimpleUtils/master/badge.svg)](https://xmikux.github.io/builds/SlimeTraditionalTranslation/SimpleUtils/master)
 
 ## 需求
 Minecraft 版本: 1.16+ (建議使用 Paper)
@@ -28,3 +28,7 @@ Slimefun 版本: DEV 900+
 ## 更新日誌
 
 Dev 8 - Fixed sieve, requires slimefun Dev 900+ now
+
+Dev 9 - Fix 2 bugs, hammers are deprecated
+
+Dev 10 - Removed Hammers, added new metrics

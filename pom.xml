@@ -51,7 +51,7 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>io.github.xMikux</groupId>
+            <groupId>io.github.SlimeTraditionalTranslation</groupId>
             <artifactId>InfinityLib</artifactId>
             <version>881c95e</version>
             <scope>compile</scope>
