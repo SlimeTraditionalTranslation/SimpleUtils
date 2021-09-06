@@ -52,7 +52,7 @@
         <dependency>
             <groupId>io.github.SlimeTraditionalTranslation</groupId>
             <artifactId>InfinityLib</artifactId>
-            <version>ecfcae7</version>
+            <version>5a58ea4</version>
             <scope>compile</scope>
         </dependency>
 
