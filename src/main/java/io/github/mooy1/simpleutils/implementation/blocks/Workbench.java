@@ -131,7 +131,7 @@ public final class Workbench extends MenuBlock implements Listener {
                     return;
                 }
                 if (item instanceof SlimefunBackpack) {
-                    p.sendMessage(ChatColor.RED + "使用簡單工作台來升級背包!");
+                    p.sendMessage(ChatColor.RED + "使用進階工作台來升級背包!");
                     return;
                 }
             }
