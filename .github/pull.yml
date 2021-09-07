@@ -4,4 +4,5 @@ rules:
     upstream: Mooy1:master
     mergeMethod: merge
     conflictReviewers:
+      - weiii-joe
       - xMikux
