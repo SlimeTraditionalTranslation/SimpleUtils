@@ -52,7 +52,7 @@
         <dependency>
             <groupId>io.github.SlimeTraditionalTranslation</groupId>
             <artifactId>InfinityLib</artifactId>
-            <version>e71ab2e</version>
+            <version>eeb230fde4</version>
             <scope>compile</scope>
         </dependency>
 
@@ -129,6 +129,26 @@
                         <goals>
                             <goal>shade</goal>
                         </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>translate-replace</id>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <executable>python</executable>
+                            <arguments>
+                                <argument>${basedir}/src/main/translations/replacer.py</argument>
+                            </arguments>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>

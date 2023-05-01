@@ -27,31 +27,31 @@ public final class Items {
     public static final SlimefunItemStack WRENCH = new SlimefunItemStack(
             "SIMPLE_WRENCH",
             Material.IRON_HOE,
-            "&6簡易扳手",
-            "&e右鍵點擊快速拆除 物流, 電容, 和機器"
+            "${simpleutils.simple_wrench.name}",
+            "${simpleutils.simple_wrench.lore}"
     );
     public static final SlimefunItemStack SIEVE = new SlimefunItemStack(
             "SIMPLE_SIEVE",
             Material.COMPOSTER,
-            "&6簡易篩網",
-            "&7將礫石篩成粉和材料"
+            "${simpleutils.simple_sieve.name}",
+            "${simpleutils.simple_sieve.lore}"
     );
     public static final SlimefunItemStack ELEVATOR = new SlimefunItemStack(
             "SIMPLE_ELEVATOR",
             Material.QUARTZ_BLOCK,
-            "&f簡單電梯",
-            "&7蹲下來下去, 跳躍來上去"
+            "${simpleutils.simple_elevator.name}",
+            "${simpleutils.simple_elevator.lore}"
     );
     public static final SlimefunItemStack WORKBENCH = new SlimefunItemStack(
             "SIMPLE_WORKBENCH",
             Material.CRAFTING_TABLE,
-            "&6簡單工作台",
-            "&7可以製作原版和黏液科技的配方"
+            "${simpleutils.simple_workbench.name}",
+            "${simpleutils.simple_workbench.lore}"
     );
 
     public static void setup(@Nonnull SimpleUtils plugin) {
         ItemGroup category = new ItemGroup(SimpleUtils.createKey("main"),
-                new CustomItemStack(Material.COMPOSTER, "&6簡單實用工具"), 0);
+                new CustomItemStack(Material.COMPOSTER, "${simpleutils.itemgroup.name}"), 0);
 
         new Workbench(category, WORKBENCH, RecipeType.ENHANCED_CRAFTING_TABLE,
                 Arrays.copyOf(new ItemStack[] {new ItemStack(Material.CRAFTING_TABLE)}, 9)

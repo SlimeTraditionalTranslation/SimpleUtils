@@ -1,0 +1,19 @@
+{
+    "simpleutils.simple_wrench.name":"&6簡易扳手",
+    "simpleutils.simple_wrench.lore":"&e右鍵來快速拆除物流節點、能量電容和機器",
+
+    "simpleutils.simple_sieve.name":"&6簡易篩網",
+    "simpleutils.simple_sieve.lore":"&7將礫石篩成粉和材料", 
+    "simpleutils.simple_sieve.chance":"&6機率：",
+    "simpleutils.simple_sieve.invalid_recipe":"無效配方！",
+
+    "simpleutils.simple_elevator.name":"&f簡單電梯",
+    "simpleutils.simple_elevator.lore":"&7蹲下往下，跳躍往上",
+
+    "simpleutils.simple_workbench.name":"&6簡單工作台",
+    "simpleutils.simple_workbench.lore":"&7可以製作原版和黏液科技的配方",
+    "simpleutils.simple_workbench.message.01":"簡單工作台沒辦法在 Minecraft 1.16 中使用原版的合成配方",
+    "simpleutils.simple_workbench.message.02":"使用進階合成台來升級背包！",
+
+    "simpleutils.itemgroup.name":"&6簡單實用工具"
+}

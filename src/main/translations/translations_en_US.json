@@ -1,0 +1,19 @@
+{
+    "simpleutils.simple_wrench.name":"&6Simple Wrench",
+    "simpleutils.simple_wrench.lore":"&eRight-Click to quickly dismantle cargo, capacitors, and machines",
+
+    "simpleutils.simple_sieve.name":"&6Simple Sieve",
+    "simpleutils.simple_sieve.lore":"&7Sifts gravel into dusts and materials",
+    "simpleutils.simple_sieve.chance":"&6Chance: ",
+    "simpleutils.simple_sieve.invalid_recipe":"Invalid Recipe!",
+
+    "simpleutils.simple_elevator.name":"&fSimple Elevator",
+    "simpleutils.simple_elevator.lore":"&7Crouch to go down, Jump to go up",
+
+    "simpleutils.simple_workbench.name":"&6Simple Workbench",
+    "simpleutils.simple_workbench.lore":"&7Can craft both vanilla and slimefun recipes",
+    "simpleutils.simple_workbench.message.01":"The SimpleWorkbench may not be able to craft vanilla recipes in mc 1.16",
+    "simpleutils.simple_workbench.message.02":"Use the enhanced crafting table to upgrade backpacks!",
+
+    "simpleutils.itemgroup.name":"&6Simple Utils"
+}

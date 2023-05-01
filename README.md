@@ -1,27 +1,38 @@
 # 簡單實用工具
-一個小型實用附加, 它增加了有用的工具與方塊.
+一個小小的實用附加，它增加了實用性功能的工具與方塊。
 
-> 此為**非官方**版本, 請勿在該作者問題追蹤內回報! <br>
-> [原作連結](https://github.com/Mooy1/SimpleUtils) | [非官方Discord](https://discord.gg/GF4CwjFXT9)
+> 此為**非官方**的黏液科技繁體翻譯版
+>
+> 請勿在該作者的問題追蹤中回報有關此的任何錯誤！
+>
+> 如果使用本翻譯遇到錯誤、翻譯用法奇怪或其他等等的問題
+>
+> 請加入非官方的 [Slimefun 繁體中文版][TraditionalChinese-DiscordLink] Discord 伺服器一起討論！
 
-## 特徵
+## 功能
 
-- 增強工作台 - 製作原版與黏液科技配方在單個選單
+- 簡單工作台 - 在單一介面中製作原版與黏液科技的合成配方
 
-- 簡單電梯 - 蹲下來下去, 跳躍來上去
+- 簡單電梯 - 蹲下往下，跳躍往上
 
-- 扳手 - 快速破壞物流節點, 電容, 和電力機器
+- 扳手 - 快速破壞物流節點、能量電容和機器
 
 ## 下載
-| 非官方繁體中文版 | 官方英文版 |
+
+| 繁體中文版 | 官方英文版 |
 | -------- | -------- |
-| 點下方圖片下載 | 點下方圖片下載 |
-| [![Build Status](https://xmikux.github.io/builds/SlimeTraditionalTranslation/SimpleUtils/master/badge.svg)](https://xmikux.github.io/builds/SlimeTraditionalTranslation/SimpleUtils/master) | [![Build Status](https://thebusybiscuit.github.io/builds/Mooy1/SimpleUtils/master/badge.svg)](https://thebusybiscuit.github.io/builds/Mooy1/SimpleUtils/master) |
+| [![Build Status][TraditionalChinese-Badge]][TraditionalChinese-Link] | [![Build Status][Official-Badge]][Official-Link] |
+
+[TraditionalChinese-Badge]: https://xmikux.github.io/builds/SlimeTraditionalTranslation/SimpleUtils/master/badge.svg
+[TraditionalChinese-Link]: https://xmikux.github.io/builds/SlimeTraditionalTranslation/SimpleUtils/master
+[TraditionalChinese-DiscordLink]: https://discord.gg/GF4CwjFXT9
+[Official-Badge]: https://thebusybiscuit.github.io/builds/Mooy1/SimpleUtils/master/badge.svg
+[Official-Link]: https://thebusybiscuit.github.io/builds/Mooy1/SimpleUtils/master
 
 ## 需求
-Minecraft 版本: 1.16+ (建議使用 Paper)
+Minecraft 版本：1.16+（推薦使用 Paper）
 
-Slimefun 版本: DEV 966+
+Slimefun 版本：DEV 966+
 
 [![Build Status](https://thebusybiscuit.github.io/builds/TheBusyBiscuit/Slimefun4/master/badge.svg)](https://thebusybiscuit.github.io/builds/TheBusyBiscuit/Slimefun4/master/)
 
