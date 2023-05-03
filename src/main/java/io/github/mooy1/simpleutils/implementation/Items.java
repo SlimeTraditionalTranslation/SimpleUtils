@@ -20,6 +20,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import org.mini2Dx.gettext.GetText;
 
 @UtilityClass
 public final class Items {
@@ -27,31 +28,31 @@ public final class Items {
     public static final SlimefunItemStack WRENCH = new SlimefunItemStack(
             "SIMPLE_WRENCH",
             Material.IRON_HOE,
-            "${simpleutils.simple_wrench.name}",
-            "${simpleutils.simple_wrench.lore}"
+            GetText.tr("&6Simple Wrench"),
+            GetText.tr("&eRight-Click to quickly dismantle cargo, capacitors, and machines")
     );
     public static final SlimefunItemStack SIEVE = new SlimefunItemStack(
             "SIMPLE_SIEVE",
             Material.COMPOSTER,
-            "${simpleutils.simple_sieve.name}",
-            "${simpleutils.simple_sieve.lore}"
+            GetText.tr("&6Simple Sieve"),
+            GetText.tr("&7Sifts gravel into dusts and materials")
     );
     public static final SlimefunItemStack ELEVATOR = new SlimefunItemStack(
             "SIMPLE_ELEVATOR",
             Material.QUARTZ_BLOCK,
-            "${simpleutils.simple_elevator.name}",
-            "${simpleutils.simple_elevator.lore}"
+            GetText.tr("&fSimple Elevator"),
+            GetText.tr("&7Crouch to go down, Jump to go up")
     );
     public static final SlimefunItemStack WORKBENCH = new SlimefunItemStack(
             "SIMPLE_WORKBENCH",
             Material.CRAFTING_TABLE,
-            "${simpleutils.simple_workbench.name}",
-            "${simpleutils.simple_workbench.lore}"
+            GetText.tr("&6Simple Workbench"),
+            GetText.tr("&7Can craft both vanilla and slimefun recipes")
     );
 
     public static void setup(@Nonnull SimpleUtils plugin) {
         ItemGroup category = new ItemGroup(SimpleUtils.createKey("main"),
-                new CustomItemStack(Material.COMPOSTER, "${simpleutils.itemgroup.name}"), 0);
+                new CustomItemStack(Material.COMPOSTER, GetText.tr("&6Simple Utils")), 0);
 
         new Workbench(category, WORKBENCH, RecipeType.ENHANCED_CRAFTING_TABLE,
                 Arrays.copyOf(new ItemStack[] {new ItemStack(Material.CRAFTING_TABLE)}, 9)

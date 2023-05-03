@@ -28,6 +28,7 @@ import io.github.thebusybiscuit.slimefun4.implementation.items.blocks.OutputChes
 import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.RandomizedSet;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.ItemUtils;
+import org.mini2Dx.gettext.GetText;
 
 public final class Sieve extends MultiBlockMachine {
 
@@ -57,7 +58,7 @@ public final class Sieve extends MultiBlockMachine {
         float finalChance = chance * itemChance;
         this.recipes.add(item, finalChance);
         this.displayRecipes.add(new ItemStack(Material.GRAVEL));
-        this.displayRecipes.add(new CustomItemStack(item, itemMeta -> itemMeta.setLore(Arrays.asList("", "${simpleutils.simple_sieve.chance}" + finalChance))));
+        this.displayRecipes.add(new CustomItemStack(item, itemMeta -> itemMeta.setLore(Arrays.asList("", GetText.tr("&6Chance: ") + finalChance))));
     }
 
     @Nonnull
@@ -71,7 +72,7 @@ public final class Sieve extends MultiBlockMachine {
         ItemStack input = p.getInventory().getItemInMainHand();
 
         if (StackUtils.getId(input) != null || input.getType() != Material.GRAVEL) {
-            p.sendMessage(ChatColor.RED + "${simpleutils.simple_sieve.invalid_recipe}");
+            p.sendMessage(ChatColor.RED + GetText.tr("Invalid Recipe!"));
             return;
         }
 

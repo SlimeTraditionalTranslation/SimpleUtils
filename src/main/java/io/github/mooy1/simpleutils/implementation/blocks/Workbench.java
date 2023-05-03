@@ -40,6 +40,7 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.items.ItemStackSnapsho
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 import me.mrCookieSlime.Slimefun.api.inventory.DirtyChestMenu;
+import org.mini2Dx.gettext.GetText;
 
 @ParametersAreNonnullByDefault
 public final class Workbench extends MenuBlock implements Listener {
@@ -63,7 +64,7 @@ public final class Workbench extends MenuBlock implements Listener {
         if (Slimefun.getMinecraftVersion().isBefore(MinecraftVersion.MINECRAFT_1_17)) {
             craftItem = Workbench::craftItemOld;
             Scheduler.run(() -> SimpleUtils.log(Level.WARNING,
-                    "${simpleutils.simple_workbench.message.01}"));
+                    GetText.tr("The SimpleWorkbench may not be able to craft vanilla recipes in mc 1.16")));
         } else {
             craftItem = Workbench::craftItem;
         }
@@ -145,7 +146,7 @@ public final class Workbench extends MenuBlock implements Listener {
                     return;
                 }
                 if (item instanceof SlimefunBackpack) {
-                    p.sendMessage(ChatColor.RED + "${simpleutils.simple_workbench.message.02}");
+                    p.sendMessage(ChatColor.RED + GetText.tr("Use the enhanced crafting table to upgrade backpacks!"));
                     return;
                 }
             }

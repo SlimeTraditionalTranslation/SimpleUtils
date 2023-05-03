@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-03 20:05+0000\n"
+"PO-Revision-Date: 2023-05-04 04:06+0800\n"
+"Last-Translator: Efina\n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: main/java/io/github/mooy1/simpleutils/implementation/Items.java:31
+msgid "&6Simple Wrench"
+msgstr "&6簡易扳手"
+
+#: main/java/io/github/mooy1/simpleutils/implementation/Items.java:32
+msgid "&eRight-Click to quickly dismantle cargo, capacitors, and machines"
+msgstr "&e右鍵來快速拆除物流節點、能量電容和機器"
+
+#: main/java/io/github/mooy1/simpleutils/implementation/Items.java:37
+msgid "&6Simple Sieve"
+msgstr "&6簡易篩網"
+
+#: main/java/io/github/mooy1/simpleutils/implementation/Items.java:38
+msgid "&7Sifts gravel into dusts and materials"
+msgstr "&7將礫石篩成粉和材料"
+
+#: main/java/io/github/mooy1/simpleutils/implementation/Items.java:43
+msgid "&fSimple Elevator"
+msgstr "&f簡單電梯"
+
+#: main/java/io/github/mooy1/simpleutils/implementation/Items.java:44
+msgid "&7Crouch to go down, Jump to go up"
+msgstr "&7蹲下往下，跳躍往上"
+
+#: main/java/io/github/mooy1/simpleutils/implementation/Items.java:49
+msgid "&6Simple Workbench"
+msgstr "&6簡單工作台"
+
+#: main/java/io/github/mooy1/simpleutils/implementation/Items.java:50
+msgid "&7Can craft both vanilla and slimefun recipes"
+msgstr "&7可以製作原版和黏液科技的配方"
+
+#: main/java/io/github/mooy1/simpleutils/implementation/Items.java:55
+msgid "&6Simple Utils"
+msgstr "&6簡單實用工具"
+
+#: main/java/io/github/mooy1/simpleutils/implementation/blocks/Sieve.java:61
+msgid "&6Chance: "
+msgstr "&6機率："
+
+#: main/java/io/github/mooy1/simpleutils/implementation/blocks/Sieve.java:75
+msgid "Invalid Recipe!"
+msgstr "無效配方！"
+
+#: main/java/io/github/mooy1/simpleutils/implementation/blocks/Workbench.java:67
+msgid "The SimpleWorkbench may not be able to craft vanilla recipes in mc 1.16"
+msgstr "簡單工作台沒辦法在 Minecraft 1.16 中使用原版的合成配方"
+
+#: main/java/io/github/mooy1/simpleutils/implementation/blocks/Workbench.java:149
+msgid "Use the enhanced crafting table to upgrade backpacks!"
+msgstr "使用進階合成台來升級背包！"
